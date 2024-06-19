@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #000;
+    border-top : 2px solid #f44336;
+    padding-block: 1rem; 
+    font-family: 'Rubik', sans-serif;
+}
+
+.footer h2 {
+    font-size: 1rem;
+    font-weight: 500;
+}

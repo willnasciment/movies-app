@@ -1,13 +1,35 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  /* Formatação da barra de rolagem */
+  body::-webkit-scrollbar {
+    width: 12px;                /* largura da barra de rolagem */
+    background-color: #222;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: #222;     /* cor de fundo da barra de rolagem */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #b71c1c;          /* cor do scroll (thumb) da barra de rolagem */
+    border-radius: 20px;                  /* arredondar o scroll (thumb) */
+    border: 3px solid #222;             /* criar um espaço em volta do scroll */
+  }
+
