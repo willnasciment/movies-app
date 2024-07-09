@@ -8,7 +8,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	font-family: 'Rubik', sans-serif;	
 	z-index: 9999; /* profundidade do header fica ao rola a pagina tudo ficara por baixo dele /* aula 14 */
 }
 
@@ -23,4 +22,24 @@
 	color: #fff;
 	padding-inline: 1rem;
 	font-size: 1.125rem; /* 1.125rem = 18px */	
+}
+	
+/* extra 01 Responsividade */
+@media (max-width: 480px) {
+	.header span {
+		font-size: 1.5rem;
+	}
+	.header a {
+		font-size: 0.95rem;
+		padding-inline: 0.5rem;
+	}
+}
+
+@media (max-width: 380px) {
+	.header span {
+		font-size: 1.5rem;
+	}
+	.header a {
+		font-size: 0.75rem;
+	}
 }

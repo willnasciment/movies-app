@@ -5,11 +5,13 @@ import Container from "../../components/Container"
 import Footer from "../../components/Footer"
 import Header from "../../components/Header"
 import Carousel from "../../components/Carousel"
+import ScrollTopButton from "../../components/ScrollToTopButton"
 
 function Home() {
  
   return (
     <>
+      <ScrollTopButton />
       <Header />
         <Banner image="home" />
         <Container>

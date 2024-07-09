@@ -5,6 +5,7 @@ import styles from "./Watch.module.css"
 import { useParams } from "react-router-dom"
 import videos from "../../json/videos.json"
 import PageNotFound from "../PageNotFound"
+import ScrollTopButton from "../../components/ScrollToTopButton"
 
 function Watch() {
   const params = useParams()
@@ -14,6 +15,7 @@ function Watch() {
   if(!video) { return <PageNotFound />}
   return (
     <>
+      <ScrollTopButton />
       <Header />
       <Container>
         <section className={styles.watch}>
